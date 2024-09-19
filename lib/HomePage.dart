@@ -364,7 +364,7 @@ class _HomePageState extends State<HomePage> {
                   const SizedBox(height: 20),
                   TextField(
                     controller: textController,
-                    style: TextStyle(color: Colors.white,),
+                    style: const TextStyle(color: Colors.white,),
                     cursorColor: Colors.white,
                     decoration: InputDecoration(
                       labelText: 'City Name',
@@ -372,11 +372,11 @@ class _HomePageState extends State<HomePage> {
                       hoverColor: Colors.teal.shade900,
                       hintText: "London , UK",
                       hintStyle: TextStyle(color: Colors.white.withOpacity(0.8)),
-                      border: OutlineInputBorder(),
-                      labelStyle: TextStyle(color: Colors.white),
+                      border: const OutlineInputBorder(),
+                      labelStyle: const TextStyle(color: Colors.white),
                     ),
                   ),
-                  SizedBox(height: 20),
+                  const SizedBox(height: 20),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
@@ -384,13 +384,13 @@ class _HomePageState extends State<HomePage> {
                         onPressed: () {
                           Navigator.of(context).pop();
                         },
-                        child: Text('Cancel',style: TextStyle(color: Colors.black),),
+                        child: const Text('Cancel',style: TextStyle(color: Colors.black),),
                       ),
                       ElevatedButton(
                         onPressed: () {
                           Navigator.of(context).pop(textController.text);
                         },
-                        child: Text('OK',style: TextStyle(color: Colors.black)),
+                        child: const Text('OK',style: TextStyle(color: Colors.black)),
                       ),
                     ],
                   ),
